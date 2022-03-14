@@ -1,7 +1,94 @@
-.default {
+@keyframes blink {
+    0%{
+        left:-130%;
+    }
+    100% {
+        left: 130%;
+    }
+}
 
+.default {
+    min-width: 100px;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #5a5a5a;
+    color: #fff;
+    padding: 8px 16px;
+    outline: none;
 }
 
 .red {
     background: red;
 }
+
+.button {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button::after {
+    display: block;
+    count:'';
+    position: absolute;
+
+    left:-130%;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    transform: skew(45deg);
+
+    background-color: #ffffff;
+    opacity: 0.7;
+
+    z-index: 14;
+}
+
+.button:hover::after {
+    animation: blink 0.35s ease;
+}
+
+.button:hover::before {
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: -100vw;
+    top: 0;
+    height: 100vh;
+    width: 300vw;
+
+    background-color: #ffffff;
+    opacity: 0.2;
+
+    z-index: 7;
+}
+
+.button:focus {
+    outline: #747474  solid 1px;
+}
+
+.button.active{
+    background: #747474;
+}
+
+.button:disabled {
+    color: #d2d5db;
+    background: #6c7589;
+    cursor: auto;
+}
+
+.button:disabled::after{
+    z-index: -1;
+}
+.button:disabled::before{
+    z-index: -1;
+}
+
+
+
+
+
+

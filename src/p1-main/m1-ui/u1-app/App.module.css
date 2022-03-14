@@ -1,3 +1,23 @@
 .App {
-background-color: gray;
+background: url('../img/imgback.png');
+background-size: 100%;
+/*display: flex;
+flex-direction: column;
+align-items: center;*/
 }
+
+.h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 40px;
+    padding: 40px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #2c2c2c;
+    letter-spacing: .05em;
+    text-shadow:
+             2px 2px 0px #d5d5d5,
+             3px 3px 0px rgba(0, 0, 0, 0.2);
+ }
+
+

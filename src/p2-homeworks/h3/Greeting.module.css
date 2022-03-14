@@ -2,6 +2,61 @@
 
 }
 
+.greeting {
+    display: flex;
+    align-items: flex-start;
+}
+
 .error {
-    border: 1px solid red;
+    color: #db052a;
+    height: 21px;
+    margin-left: 10px;
+}
+
+.input {
+    margin: 10px;
+    border-radius: 7px;
+    background:  #C2D1C2;
+    color: #454e45;
+}
+
+.input:focus {
+    outline: none;
+    border: #d5f8d5;
+}
+
+.errorInput {
+    margin: 10px;
+    border-radius: 7px;
+
+    background: #C2D1C2;
+    color: #454e45;
+
+    border: 2px solid #db052a;
+    outline: none;
+}
+
+.button {
+    margin: 10px;
+    width: 60px;
+    background-color: #454e45;
+    color: #C2D1C2;
+    outline: none;
+    border-radius: 7px;
+}
+
+.button:focus {
+    outline: #d5f8d5 solid 2px;
+}
+
+.button:active {
+    background: #e7f7df;
+}
+
+.button.disabled {
+    color: #271703;
+}
+
+.count {
+    margin: 10px;
 }

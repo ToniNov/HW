@@ -1,21 +1,23 @@
 .button {
     margin: 10px;
     width: 60px;
-    background-color: #003300;
-    color: #99FF99;
+    background-color: #454e45;
+    color: #C2D1C2;
     outline: none;
+    border-radius: 7px;
 }
 .button:focus {
-    outline: #99FF99 solid 1px;
+    outline: #d5f8d5 solid 3px;
 }
 
 .button:active {
-    background: #99FF99;
+    background: #d5f8d5;
 }
 
 .active {
-    background: #335533;
+    background: #6e7b6e;
 }
+
 .affair {
     display: flex;
 }
@@ -32,7 +34,7 @@
     color: orange;
 }
 .low {
-    color: greenyellow;
+    color: #9ceb26;
 }
 
 

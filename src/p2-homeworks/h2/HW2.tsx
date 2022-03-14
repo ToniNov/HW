@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Affairs from './Affairs'
 
 // types
-export type AffairPriorityType = "high" | "low" | "middle" // need to fix any
+export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
 export type AffairType = {
     _id: number,
     name: string,
