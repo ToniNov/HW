@@ -1,6 +1,6 @@
 .link {
     text-decoration: none;
-    color: white;
+    color: #f4e5e5;
     margin: 10px;
 }
 
@@ -14,7 +14,7 @@
 
 .block {
     width: 21px;
-    hight: 21px;
+    height: 21px;
 
     margin: 10px;
 
@@ -32,5 +32,5 @@
 
 .header:hover {
     transition-duration: 500ms;
-    transform: translate(0);
+    transform: translate(100px);
 }
