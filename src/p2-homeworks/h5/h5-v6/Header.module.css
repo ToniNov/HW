@@ -26,11 +26,11 @@
 
     width: 280px;
 
-    transition-duration: 500ms;
+    transition-duration: 100ms;
     transform: translate(-250px);
 }
 
 .header:hover {
-    transition-duration: 500ms;
-    transform: translate(100px);
+    transition-duration: 100ms;
+    transform: translate(0px);
 }
